@@ -1,9 +1,8 @@
 package org.example;
 import com.sun.source.tree.WhileLoopTree;
-
 import java.util.Scanner;
 import java.util.Scanner;
-public class WordMan {
+public class WordMan{
 
     Scanner s = new Scanner(System.in);
     WordCRUD wordCRUD;
@@ -13,6 +12,7 @@ public class WordMan {
     }
 
     public int selectMenu(){
+        System.out.println();
         System.out.print(" *** 영단어 마스터 ***\n"
         + "*******************\n"
         + "1. 모든 단어 보기\n"
@@ -33,14 +33,18 @@ public class WordMan {
 
         while(true){
             int menu = selectMenu();
-            if(menu == 0) break;
+            if(menu == 0) {
+                System.out.print("\n"+"프로그램 종료! 다음에 만나요~"+"\n");
+                break;
+            }
             if(menu == 4){
                 wordCRUD.addWord();
             } else if (menu == 1) {
-                
+                wordCRUD.listAll();
             }
         }
 
     }
+
 
 }
