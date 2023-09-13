@@ -26,9 +26,7 @@ public class Word {
     public void setLevel(int level) {
         this.level = level;
     }
-    public String getWord() {
-        return word;
-    }
+    public String getWord() { return word; }
     public void setWord(String word) {
         this.word = word;
     }

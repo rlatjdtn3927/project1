@@ -39,8 +39,15 @@ public class WordMan{
             }
             if(menu == 4){
                 wordCRUD.addWord();
-            } else if (menu == 1) {
+            }
+            else if(menu == 1){
                 wordCRUD.listAll();
+            }
+            else if(menu == 5){ //update
+                wordCRUD.updateItem();
+            }
+            else if(menu == 6){ //delete
+                wordCRUD.deleteItem();
             }
         }
 
